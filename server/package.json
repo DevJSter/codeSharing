@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "license": "MIT",
+   "scripts": {
+    "build" : "npm install",
+    "start" : "node server.js"
+  },
   "dependencies": {
     "express": "^4.19.2",
     "http": "^0.0.1-security",
