@@ -14,7 +14,7 @@ const io = new Server(server);
 //     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 // });
 
- const userSocketMap = {};
+const userSocketMap = {};
 function getAllConnectedClients(roomId) {
     // Map
     return Array.from(io.sockets.adapter.rooms.get(roomId) || []).map(
